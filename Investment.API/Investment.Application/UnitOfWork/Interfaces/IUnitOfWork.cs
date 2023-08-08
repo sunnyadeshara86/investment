@@ -1,5 +1,4 @@
-﻿using Investment.Application.Repositories;
-using Investment.Application.Repositories.Interfaces;
+﻿using Investment.Application.Repositories.Interfaces;
 using Investment.Domain.Entities.Assets;
 using Investment.Domain.Entities.Core;
 

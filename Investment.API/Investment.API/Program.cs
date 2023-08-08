@@ -23,7 +23,7 @@ namespace Investment.API
                 opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddScoped<IGenericRepository<AppUser>,  GenericRepository<AppUser>>();
+            builder.Services.AddScoped<IGenericRepository<AppUser>, GenericRepository<AppUser>>();
             builder.Services.AddScoped<IGenericRepository<AgriCultureProperty>, GenericRepository<AgriCultureProperty>>();
             builder.Services.AddScoped<IGenericRepository<Bank>, GenericRepository<Bank>>();
             builder.Services.AddScoped<IGenericRepository<Cash>, GenericRepository<Cash>>();

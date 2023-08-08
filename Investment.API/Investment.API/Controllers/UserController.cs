@@ -1,9 +1,6 @@
-﻿using Investment.Data;
+﻿using Investment.Application.UnitOfWork.Interfaces;
 using Investment.Domain.Entities.Core;
 using Microsoft.AspNetCore.Mvc;
-using Investment.Application;
-using Investment.Application.UnitOfWork;
-using Investment.Application.UnitOfWork.Interfaces;
 
 namespace Investment.API.Controllers
 {
@@ -27,7 +24,7 @@ namespace Investment.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<IEnumerable<AppUser>>> GetUser(int id)
+        public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             var user = await _unitOfWork.AppUserRepository.GetById(id);
 

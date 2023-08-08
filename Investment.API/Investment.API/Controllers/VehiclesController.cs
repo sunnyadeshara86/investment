@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Investment.Application.UnitOfWork.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Investment.API.Controllers
 {
@@ -6,5 +7,11 @@ namespace Investment.API.Controllers
     [ApiController]
     public class VehiclesController : ControllerBase
     {
+        private readonly IUnitOfWork _unitOfWork;
+
+        public VehiclesController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
     }
 }
