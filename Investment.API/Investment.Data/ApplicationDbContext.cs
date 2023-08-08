@@ -1,6 +1,5 @@
 ﻿using Investment.Domain.Entities.Assets;
 using Investment.Domain.Entities.Core;
-using Investment.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
 namespace Investment.Data
